@@ -173,14 +173,10 @@ module.exports.contains = contains;
 */
 
 function unique(array){
-    //create array to save unique elements
     let result = [];
-    //loop through array
     for(let element of array){
-        //if element not in result, add element to result array
         if(indexOf(result, element) === -1) result.push(element);
     }
-    //return result array
     return result;
 }
 
